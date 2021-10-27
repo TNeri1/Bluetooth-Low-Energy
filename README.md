@@ -70,39 +70,39 @@ This is a general representation of Bluetooth architecture:
 
 How it looks (From the top down):
 * Profiles
- * Alert Notification, Blood Pressure, Glucose, Heart Rate, HID over GATT, Proximity, ETC...
+  * Alert Notification, Blood Pressure, Glucose, Heart Rate, HID over GATT, Proximity, ETC...
 * Host
- * Security Manager Protocol (SMP)
-  * Provides pairing and key distribution for securing communication 
- * Generic Access Profile (GAP)
-  * Responsible for handinling device access methods and processes including device discovery, connection establishment, connection termination and bonding 
- * Generic Attribute (GATT)
-  * A base profile for all top-level LE profiles
-  * Defines how a bunch of ATT attributes are grouped together into meaningful services 
- * Attribute (ATT)
-  * Specifies how to access data using a client server model
-  * Data is stored in attributes which can be accessed by the client
-  * Composed of three basic elements:
-   * 1. 16-bit handle
-   * 2. UUID which defines the attribute type 
-   * 3. Value of a certain length 
- * Logical Link Controller and Adoption Protocol (L2CAP)
-  * Provides Data Encapsulation services to the upper layer and allows end to end data communication 
- * Host Controller Interface (HCI)
+  * Security Manager Protocol (SMP)
+    * Provides pairing and key distribution for securing communication 
+  * Generic Access Profile (GAP)
+    * Responsible for handinling device access methods and processes including device discovery, connection establishment, connection termination and bonding 
+  * Generic Attribute (GATT)
+    * A base profile for all top-level LE profiles
+    * Defines how a bunch of ATT attributes are grouped together into meaningful services 
+  * Attribute (ATT)
+    * Specifies how to access data using a client server model
+    * Data is stored in attributes which can be accessed by the client
+    * Composed of three basic elements:
+      * 1. 16-bit handle
+      * 2. UUID which defines the attribute type 
+      * 3. Value of a certain length 
+  * Logical Link Controller and Adoption Protocol (L2CAP)
+    * Provides Data Encapsulation services to the upper layer and allows end to end data communication 
+  * Host Controller Interface (HCI)
 * Controller
- * Host Controller Interface (HCI)
-  * Provides a standardized interface between Host Layer and the Upper Layers which can be interfaced by an application program's API or use a hardware interface like UART, SPI or USB to control by sending commands and data
-  * Passes HCI Send data and events to the host,the host passes HCI Send commands and data to the controller
- * Link Layer (LL)
-  * Responsible for advertising, scanning, establishing and maintaining connections
-  * Also makes sure the data packets are arranged in correct order and are transmitted correctly
-  * Has 5 States:
-   * Standby, Advertising, Scanning, Initiating, and Connection State  
- * Physical Layer (PHY)
-  * 2.4 GHz Frequency band (2.4000 GHz to 2.4835 GHz)
-   * Divided into 40 RF Channels
-   * 3 Channels (37, 38, 39) are fixed for Broadcasting data whereas the other 37 are used for communication purposes
-   * Data transmission rate can be set to 1 Mbps or 2Mbps   
+  * Host Controller Interface (HCI)
+    * Provides a standardized interface between Host Layer and the Upper Layers which can be interfaced by an application program's API or use a hardware interface like UART, SPI or USB to control by sending commands and data
+    * Passes HCI Send data and events to the host,the host passes HCI Send commands and data to the controller
+  * Link Layer (LL)
+    * Responsible for advertising, scanning, establishing and maintaining connections
+    * Also makes sure the data packets are arranged in correct order and are transmitted correctly
+    * Has 5 States:
+      * Standby, Advertising, Scanning, Initiating, and Connection State  
+  * Physical Layer (PHY)
+    * 2.4 GHz Frequency band (2.4000 GHz to 2.4835 GHz)
+    * Divided into 40 RF Channels
+    * 3 Channels (37, 38, 39) are fixed for Broadcasting data whereas the other 37 are used for communication purposes
+    * Data transmission rate can be set to 1 Mbps or 2Mbps   
 
 
 
