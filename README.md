@@ -8,16 +8,63 @@ For this repository I will be attempting to experiment around with bluetooth and
 
 After trudging through numerous sources finding tutorials and correct sources to get started in bluetooth may be a bit confusing. I hope that through this README I can provide my personal journey of sorts and links to websites or sources that will be essential or useful to anyone starting.
 
+## Personal Notes (To be organized later):
+  * Reference: Sumair's Embedded Engineering Series
+
+### Bluetooth - Introduction
+
+##### History:
+
+* Bluetooth was initially developed by Dr. Jaap Haartsen at Ericsson in 1994.
+* Mobile Market was growing faster and faster so a standard wireless communication was needed.
+  * Ericsson, Nokia, IBM, Intel and TOshiba created a group named SIG (Special Interest Group) to create a standard for communication among mobile devices.
+* (FUN FACT: The bluetooth symbol is a Nordic Initial for "H.B." after the famous Nordic Viking Harald "Bluetooth" who united countries in the Norwegain area during his time.)
+
+##### BLE & Features
+
+* BLE stands for Bluetooth Low Energy
+  * BLE features an ultra low power protocol which uses less time on air and allows the devices to sleep for longer time periods while the connection is not being used
+  * BLE devices can consume very less power and can even work for more than a year on just a single coin bettery
+  * Highly Secure with AES-128 encryption
+  * Long transmission Distrance can be achieved
+  * Instant connection with devices
+
+##### Applications of Bluetooth
+
+* Medical
+* Fitness & Support
+* Computers and Games
+* Advertisement
+* IOT
+* ETC.
+
+##### Roles in BLE
+
+1. __Broadcaster (B)__ (Not as used)
+  * Advertises data only and cannot connect with other devices
+2. __Observer (O)__ (Not as used)
+  * Scans for advertised data and can receive advertised data but cannot connect to other devices
+3. __Central (C)__ (Mostly Used)
+  * A master device in Bluetooth which scans for advertisement packets
+  * Initiates connection and is capable of connecting with other Peripherals (Slave devices) upon receiving advertisement packets 
+  * Can connect with multiple Peripherals (slave) devices
+  * Examples: Mobile Phones
+5. __Peripheral (P)__ (Mostly Used)
+  * A slave device which advertises its data and connect with Masters
+  * Examples: Sensors
+* (A single device can support multiple roles - nrf52840 devices and similar)
+
+
 
 [Software Demo Video](http://youtube.link.goes.here) # TODO
 
-# Network Communication
+## Network Communication
 
 {Describe the architecture used} #TODO
 
 {Identify the format of messages being sent} # TODO
 
-# Development Environment
+## Development Environment
 
 {Describe the tools that you used to develop the software}
 
