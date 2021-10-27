@@ -41,17 +41,17 @@ After trudging through numerous sources finding tutorials and correct sources to
 ##### Roles in BLE
 
 1. __Broadcaster (B)__ (Not as used)
-  * Advertises data only and cannot connect with other devices
+    * Advertises data only and cannot connect with other devices
 2. __Observer (O)__ (Not as used)
-  * Scans for advertised data and can receive advertised data but cannot connect to other devices
+    * Scans for advertised data and can receive advertised data but cannot connect to other devices
 3. __Central (C)__ (Mostly Used)
-  * A master device in Bluetooth which scans for advertisement packets
-  * Initiates connection and is capable of connecting with other Peripherals (Slave devices) upon receiving advertisement packets 
-  * Can connect with multiple Peripherals (slave) devices
-  * Examples: Mobile Phones
+    * A master device in Bluetooth which scans for advertisement packets
+    * Initiates connection and is capable of connecting with other Peripherals (Slave devices) upon receiving advertisement packets 
+    * Can connect with multiple Peripherals (slave) devices
+    * Examples: Mobile Phones
 5. __Peripheral (P)__ (Mostly Used)
-  * A slave device which advertises its data and connect with Masters
-  * Examples: Sensors
+    * A slave device which advertises its data and connect with Masters
+    * Examples: Sensors
 * (A single device can support multiple roles - nrf52840 devices and similar)
 
 ##### Example Connections
@@ -130,13 +130,12 @@ How it looks (From the top down):
 
 ## Development Environment
 
-{Describe the tools that you used to develop the software}
+{Tools used to develop the software}
 
-{Describe the programming language that you used and any libraries.}
+{PRogramming languages used and any libraries.}
 
 ## Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [4 Essential Tools for Every Bluetooth Low Energy Developer](https://www.bluetooth.com/blog/4-essential-tools-for-every-bluetooth-low-energy-developer/)
 * [Sumair's Embedded Engineering (Start at Part 40 - Extremely Helpful)](https://www.youtube.com/watch?v=AQu80Fdn3T8&list=PLiKJljyEUlZj4z8RqJKTaoMpSqjLdBGO4&index=43)
 * [An Introduction to Bluetooth Low Energy Development](https://www.bluetooth.com/bluetooth-resources/bluetooth-le-developer-starter-kit/)
@@ -151,7 +150,6 @@ How it looks (From the top down):
 
 # Future Work
 
-{Things to fix, improve, and add in the future.}
 * TODO
 * TODO
 * TODO
