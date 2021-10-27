@@ -69,8 +69,22 @@ This is a general representation of Bluetooth architecture:
 3. Profiles
 
 How it looks (From the top down):
-* Profiles
+* Profiles (Application Layer)
   * Alert Notification, Blood Pressure, Glucose, Heart Rate, HID over GATT, Proximity, ETC...
+  * Profiles
+    * Describes how two devices can discover each other and how they can communicate
+    * Each profile can have multiple services
+    * Describes the overall functionality of the device
+  * Service
+    * A collection of device characteristics and behaviors
+    * Might contain more than one characteristic
+      * 1. Services defined by SIG (Hear rate service)
+      * 2. Custom services
+  * Characteristics
+    * Numeric values and the actual data that a user can access and use for different purposes (i.e. temperature value, battery percentage, etc.
+  * UUID (Universally Unique Identifier)
+    * Each service or characteristic is an attribute and all the attributes have a Unique ID called UUIS
+    * 128 bits long, so it has to transmit 16 bytes for each UUID   
 * Host
   * Security Manager Protocol (SMP)
     * Provides pairing and key distribution for securing communication 
