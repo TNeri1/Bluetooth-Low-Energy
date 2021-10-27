@@ -118,7 +118,37 @@ How it looks (From the top down):
     * 3 Channels (37, 38, 39) are fixed for Broadcasting data whereas the other 37 are used for communication purposes
     * Data transmission rate can be set to 1 Mbps or 2Mbps   
 
+##### How Data is Transferred
 
+1. Notifications:
+  * Faster way to transmit data (transmits without acknowledgement signal from client)
+3. Indications:
+  * Needs an acknowledgement signal after data transfer (Client has to send an acknowledgment signal before a new transfer)
+
+#### More About Advertisements
+
+1. Directed Advertisement:
+  * Suitable for known peer devices
+2. Undirected Advertisement:
+  * General advertiesment and is broadcasted + any scanning device can request for a connection and it can accept
+3. Non-connectable Advertisement:
+  * Can advertise its data but cannot accept any connections
+4. Discoverable Advertisement (Scannable Advertisement):
+  * Can respond to scans but it also does not allow connections
+
+##### How Scanning Works
+
+1. Scan Window: Time period for one scan
+2. Time Interval: Time interval between each scan
+
+##### Pairing and Bonding
+
+1. Pairing: Authenticating of another device by `Establishes COnnection using` shared keys which can be used to encrypt links
+  * Just Works
+  * Passkey Entry
+  * Numeric Comparison
+  * OOB (Out of Band) (NFC)
+3. Bonding: Bonding is pairing followed by distributio of keys which can encrypt the links in future reconnections.
 
 [Software Demo Video](http://youtube.link.goes.here) # TODO
 
