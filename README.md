@@ -150,7 +150,7 @@ How it looks (From the top down):
   * OOB (Out of Band) (NFC)
 3. Bonding: Bonding is pairing followed by distributio of keys which can encrypt the links in future reconnections.
 
-[Software Demo Video](https://youtu.be/O16CegYrXCE) # TODO
+[Software Demo Video: My First Step in Learning Bluetooth Low Energy](https://youtu.be/O16CegYrXCE)
 
 ## Network Communication
 
