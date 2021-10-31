@@ -154,15 +154,28 @@ How it looks (From the top down):
 
 ## Network Communication
 
-{Describe the architecture used} #TODO
+The architecture used is BLE.
+
+The following program is not of my own creation. I am using this beginner code as a means to understand bluetooth low energy development and explain my understanding of BLE.
+
+This program allows for a bluetooth nrf52840 Dongle to connect to the nrf52840 Developer Kit which acts as the Peripheral.
+
+The Dongle acts as the central in which we can observe and respond to the peripheral.
+
+In the case of this simple project
 
 {Identify the format of messages being sent} # TODO
 
 ## Development Environment
 
-{Tools used to develop the software}
+##### Tools
+* nrf52840 Dongle
+* nrf52840 DK
+* Segger Embedded Studio for ARM V5.64 - Non-Commercial License
+* NRF Connect v3.7.2
 
-{PRogramming languages used and any libraries.}
+##### Languages
+* C
 
 ## Useful Websites
 
@@ -180,6 +193,7 @@ How it looks (From the top down):
 
 # Future Work
 
-* TODO
-* TODO
-* TODO
+* Learn to program advertisement
+* Learn to create, design, and code BLE Profiles
+* Continue Learning Bluetooth Technology
+* Segue into Ultra Wideband Programming
